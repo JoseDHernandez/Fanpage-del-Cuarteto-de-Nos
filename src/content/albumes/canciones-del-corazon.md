@@ -1,0 +1,30 @@
+---
+title: "Canciones del Corazón"
+release_year: 1991
+description: "Cuarto álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1991 por el sello Orfeo. Este disco marcó un punto de inflexión en la carrera del grupo, incorporando una mayor diversidad musical y letras más experimentales. Incluye clásicos como 'Canción de Amor', 'Corazón Maricón' y 'Al Cielo No'."
+cover_image: "albumes/canciones-del-corazon.jpg"
+links:
+  spotify_link: "https://open.spotify.com/album/2nYkOzI6plzhX7StDOlMOA"
+  youtube_link: "https://www.youtube.com/watch?v=i8k4ggaVq4w"
+songs:
+  - title: "Bienvenida a Kalibunga y Tobogán"
+    duration: "2:46"
+  - title: "Siempre que escucho al Cuarteto"
+    duration: "4:15"
+  - title: "Canción de Amor"
+    duration: "3:06"
+  - title: "La Bombi"
+    duration: "3:50"
+  - title: "Al Cielo No"
+    duration: "4:38"
+  - title: "Corazón Maricón"
+    duration: "4:09"
+  - title: "Tabaré, That's Right"
+    duration: "4:46"
+  - title: "Procuro Olvidarte"
+    duration: "4:13"
+  - title: "La Familia Berrantes"
+    duration: "3:10"
+  - title: "Mabel"
+    duration: "4:28"
+---

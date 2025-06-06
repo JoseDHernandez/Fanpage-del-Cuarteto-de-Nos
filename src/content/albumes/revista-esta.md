@@ -1,0 +1,32 @@
+---
+title: "Revista ¡¡Ésta!!"
+release_year: 1998
+description: "Noveno álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1998 por el sello BMG. Este disco presenta un concepto único donde cada canción representa una noticia ficticia, y el folleto que acompaña al álbum simula una revista sensacionalista. Musicalmente, es considerado el disco más roquero de la banda hasta esa fecha, con solos de guitarra prominentes y una energía renovada. Incluye temas destacados como 'Ya te vas a mejorar', 'Maté a la maestra' y 'Yo soy Alvin, el batero'."
+cover_image: "albumes/revista-esta.jpg"
+links:
+  spotify_link: "https://open.spotify.com/album/6DvYfvfz8VSJ8mJoH6O4at"
+  youtube_link: "https://www.youtube.com/watch?v=WjBtBuu0s4g"
+songs:
+  - title: "¡Cómo ha cambiado mi barrio!"
+    duration: "3:16"
+  - title: "La China Ta' Güenaza"
+    duration: "2:30"
+  - title: "Nadie me quiere"
+    duration: "4:05"
+  - title: "Ya te vas a mejorar"
+    duration: "2:49"
+  - title: "Maté a la maestra"
+    duration: "4:04"
+  - title: "Que los cumpla feliz"
+    duration: "3:12"
+  - title: "Kaya Natalia"
+    duration: "3:38"
+  - title: "Palomo"
+    duration: "2:50"
+  - title: "Chico correcto"
+    duration: "3:30"
+  - title: "El tío Calambres"
+    duration: "2:25"
+  - title: "Yo soy Alvin, el batero"
+    duration: "3:20"
+---

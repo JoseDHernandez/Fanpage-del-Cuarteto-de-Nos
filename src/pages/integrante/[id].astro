@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+export async function getStaticPaths() {
+  const integrantes = await getCollection("integrantes");
+  return integrantes.map((integrante) => ({
+    params: { id: integrante.slug },
+    props: { integrante },
+  }));
+}
+const { integrante } = Astro.props;
+const { name, time, role, photo } = integrante.data;
+const { Content } = await render(integrante);
+---
+
+<Layout title={`${name}`}>
+  <main>
+    <section>
+      <div class="grid md:grid-cols-2 gap-10 items-center mb-6">
+        <img
+          transition:name={`photo-${integrante.slug}`}
+          src={`../${photo}`}
+          alt={name}
+          class="rounded-xl shadow-xl object-cover w-[25rem] m-auto md:m-0 md:w-full h-auto aspect-square object-top drop-shadow-xl bg-white"
+        />
+        <div>
+          <h1 class="font-bold mb-2">{name}</h1>
+          <h2 class="text-gray-600 italic mb-4">
+            {role}
+          </h2>
+          <p>{time}</p>
+        </div>
+      </div>
+      <div class="text-gray-700 grid gap-5 w-full">
+        <Content />
+      </div>
+    </section>
+  </main>
+</Layout>

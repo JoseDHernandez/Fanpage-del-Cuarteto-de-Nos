@@ -1,0 +1,30 @@
+---
+title: "Apocalipsis Zombi"
+release_year: 2017
+description: "Decimoséptimo álbum de estudio de El Cuarteto de Nos, lanzado el 12 de mayo de 2017 bajo el sello Sony Music Argentina. Producido por Cachorro López, este disco marca un giro hacia un estilo más introspectivo y melódico, con letras profundas y una sonoridad más pop y electrónica. Incluye éxitos como 'Invisible', 'El Innombrable' y 'Gaucho Power'."
+cover_image: "albumes/apocalipsis-zombi.jpg"
+links:
+  spotify_link: "https://open.spotify.com/intl-es/album/6Jp05umHWHkUhR6V6TnonS"
+  youtube_link: "https://www.youtube.com/watch?v=HfKMIecCPsU"
+songs:
+  - title: "Apocalipsis Zombi"
+    duration: "3:33"
+  - title: "Invisible"
+    duration: "3:36"
+  - title: "El Innombrable"
+    duration: "3:35"
+  - title: "Calma Vladimir"
+    duration: "3:23"
+  - title: "Gaucho Power"
+    duration: "3:20"
+  - title: "Mirada de Nylon"
+    duration: "3:31"
+  - title: "Hola karma"
+    duration: "3:49"
+  - title: "La Bestia"
+    duration: "3:31"
+  - title: "Nombres"
+    duration: "3:28"
+  - title: "El Rey y El As"
+    duration: "4:03"
+---

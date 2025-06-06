@@ -1,0 +1,148 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const albumes = await getCollection("albumes");
+---
+
+<Layout title="El cuarteto de nos">
+  <main>
+    <h1>El cuarteto de nos</h1>
+    <div class="sm:grid hidden sm:grid-cols-5 my-6 gap-3">
+      <a href="/integrante/roberto-musso" class="self-end">
+        <img
+          transition:name="photo-roberto-musso"
+          loading="lazy"
+          decoding="async"
+          src="miembros/roberto.webp"
+          alt="Roberto Musso"
+          title="Roberto Musso"
+          class="h-50 lg:h-70 transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
+        />
+      </a>
+      <a href="/integrante/alvaro-pintos" class="self-end">
+        <img
+          transition:name="photo-alvaro-pintos"
+          loading="lazy"
+          decoding="async"
+          src="miembros/alvin.webp"
+          alt="Alvin"
+          title="Álvaro pintos"
+          class="h-50 lg:h-70 transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
+        />
+      </a>
+      <a href="/integrante/gustavo-antuna" class="self-end">
+        <img
+          transition:name="photo-gustavo-antuna"
+          loading="lazy"
+          decoding="async"
+          src="miembros/topo.webp"
+          alt="Gustavo Antuña"
+          title="Gustavo Antuña"
+          class="h-50 lg:h-70 transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
+        /></a
+      >
+      <a href="/integrante/santiago-marrero" class="self-end">
+        <img
+          transition:name="photo-santiago-marrero"
+          loading="lazy"
+          decoding="async"
+          src="miembros/santiago.webp"
+          alt="Santiago"
+          title="Santiago Marrero"
+          class="h-50 lg:h-70 object-left transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
+        />
+      </a>
+      <a href="/integrantes" class="self-end">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="miembros/otros.webp"
+          alt="Raro"
+          title="Antiguos mienbros"
+          class="h-40 lg:h-50 object-left transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
+        />
+      </a>
+    </div>
+
+    <p class="prose-xl">
+      El Cuarteto de Nos es una banda uruguaya de rock alternativo formada en
+      Montevideo en 1984. Con una mezcla de rock, rap, pop y electrónica, se
+      destacan por sus letras cargadas de humor ácido y crítica social. Su
+      historia comenzó con los hermanos Musso imaginando la ciudad ficticia de
+      Tajo, que luego inspiró sus canciones. Alcanzaron el éxito masivo con Otra
+      Navidad en las Trincheras (1994) y reconocimiento internacional con Raro
+      (2006) y Porfiado (2012), ganador de dos Latin Grammy. Hoy, siguen
+      reinventándose y son una de las bandas más influyentes del rock en
+      español.
+    </p>
+  </main>
+  <section>
+    <h2 class="my-4">Filmografia</h2>
+    <div class="grid md:grid-cols-2 gap-6 sm:gap-4">
+      <iframe
+        class="rounded-lg shadow-md aspect-video w-full h-auto"
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/7qdgPw0wyKY?si=p6NnSyFzNecNhAIo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <iframe
+        class="rounded-lg shadow-md aspect-video w-full h-auto"
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/-RNbCW8yCpI?si=NOY9O3QQlcnwFrwY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+  <section>
+    <h2 id="Discografia" class="my-4">Discograf&iacute;a</h2>
+    <div
+      class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+    >
+      {
+        albumes
+          .sort((a, b) => b.data.release_year - a.data.release_year)
+          .map((album) => {
+            const { title, cover_image } = album.data;
+            return (
+              <a
+                href={`/album/${album.slug}`}
+                class="group block transform transition duration-300 hover:scale-[1.02] hover:shadow-xl"
+              >
+                <div class="rounded-xl bg-white p-4 shadow-md hover:bg-gray-50 relative">
+                  <img
+                    transition:name={`cover-${album.slug}`}
+                    src={`${cover_image}`}
+                    alt={title}
+                    width="250"
+                    height="250"
+                    loading="lazy"
+                    decoding="async"
+                    class="rounded-lg w-full object-cover aspect-square group-hover:brightness-105 transition"
+                  />
+                  <p class="text-center mt-3 mb-0 text-lg font-semibold text-gray-800 group-hover:text-yellow-700">
+                    {title}
+                  </p>
+                </div>
+              </a>
+            );
+          })
+      }
+      <img
+        src="enano.webp"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        class="lg:col-span-3 self-end justify-self-end w-100"
+      />
+    </div>
+  </section>
+</Layout>

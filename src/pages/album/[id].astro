@@ -1,0 +1,79 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+export async function getStaticPaths() {
+  const albumes = await getCollection("albumes");
+  return albumes.map((album) => ({
+    params: { id: album.slug },
+    props: { album },
+  }));
+}
+const { album } = Astro.props;
+const { title, release_year, description, cover_image, links, songs } =
+  album.data;
+---
+
+<Layout title={`${title}`}>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mt-6">
+    <img
+      transition:name={`cover-${album.slug}`}
+      src={`../${cover_image}`}
+      alt={title}
+      class="w-[25rem] m-auto md:m-0 md:w-full rounded-xl shadow-lg"
+      loading="lazy"
+      decoding="async"
+    />
+
+    <div class="md:col-span-2 space-y-4">
+      <h1 class="text-3xl font-bold my-6 text-gray-800">{title}</h1>
+      <p class="text-sm italic text-gray-600">
+        Año de lanzamiento: {release_year}
+      </p>
+      <p class="text-gray-700 text-justify">{description}</p>
+
+      <div class="flex flex-wrap gap-4 justify-around sm:justify-start">
+        <a
+          class="bg-green-800 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold transition duration-200"
+          href={links.spotify_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`Escucha ${title} en Spotify`}
+        >
+          Spotify
+        </a>
+        <a
+          class="bg-red-800 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-semibold transition duration-200"
+          href={links.youtube_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`Escucha ${title} en YouTube Music`}
+        >
+          YouTube Music
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="mt-10">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-800">
+      Lista de canciones
+    </h2>
+    <ol class="space-y-4">
+      {
+        songs.map((song) => (
+          <li class="border border-gray-200 rounded-lg p-4 shadow-sm bg-white">
+            <div class="flex justify-between font-medium text-gray-900">
+              <span>{song.title}</span>
+              <span>{song.duration}</span>
+            </div>
+            {song.artist && (
+              <p class="text-sm italic text-gray-600 mt-1 pl-1">
+                {song.artist}
+              </p>
+            )}
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</Layout>

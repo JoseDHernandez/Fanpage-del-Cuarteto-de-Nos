@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+const integrantes = await getCollection("integrantes");
+---
+
+<Layout title="Integrantes">
+  <h1 class="text-center my-6">Integrantes</h1>
+  <p class="text-center text-gray-600">
+    Conoce a los miembros actuales y pasados de El Cuarteto de Nos
+  </p>
+
+  <div
+    class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 mt-6"
+  >
+    {
+      integrantes
+        .sort((a, b) => a.data.priority - b.data.priority)
+        .map((integrante) => {
+          const { name, time, photo, role } = integrante.data;
+          return (
+            <a href={`integrante/${integrante.slug}`} class="group">
+              <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                <img
+                  transition:name={`photo-${integrante.slug}`}
+                  src={`../${photo}`}
+                  alt={name}
+                  title={name}
+                  class="h-72 w-full object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300 ease-in-out"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="pt-4 text-center">
+                  <p>
+                    <span class="text-xl font-semibold text-gray-800 group-hover:text-yellow-400 transition-colors duration-200">
+                      {name}
+                    </span>{" "}
+                    <br />
+                    <span class="text-gray-600">{role}</span>
+                    <br />
+                    <small class="text-gray-400 italic">{time}</small>
+                  </p>
+                </div>
+              </div>
+            </a>
+          );
+        })
+    }
+  </div>
+</Layout>
