@@ -19,7 +19,7 @@ const integrantes = await getCollection("integrantes");
         .map((integrante) => {
           const { name, time, photo, role } = integrante.data;
           return (
-            <a href={`integrante/${integrante.slug}`} class="group">
+            <a href={`/integrante/${integrante.slug}`} class="group">
               <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
                 <img
                   transition:name={`photo-${integrante.slug}`}
