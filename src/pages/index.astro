@@ -1,7 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-
+import { Image } from "astro:assets";
+import EnanoImg from "../../public/enano.webp";
+import RobertoImg from "../content/integrantes/fotos/roberto.webp";
+import AlvinImg from "../content/integrantes/fotos/alvin.webp";
+import TopoImg from "../content/integrantes/fotos/topo.webp";
+import SantiagoImg from "../content/integrantes/fotos/santiago.webp";
+import OtroImg from "../../public/otros.webp";
 const albumes = await getCollection("albumes");
 ---
 
@@ -10,56 +16,46 @@ const albumes = await getCollection("albumes");
     <h1>El cuarteto de nos</h1>
     <div class="sm:grid hidden sm:grid-cols-5 my-6 gap-3">
       <a href="/integrante/roberto-musso" class="self-end">
-        <img
-          transition:name="photo-roberto-musso"
-          loading="lazy"
-          decoding="async"
-          src="miembros/roberto.webp"
+        <Image
+          src={RobertoImg}
           alt="Roberto Musso"
+          transition:name="photo-roberto-musso"
           title="Roberto Musso"
           class="h-50 lg:h-70 transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
         />
       </a>
       <a href="/integrante/alvaro-pintos" class="self-end">
-        <img
+        <Image
+          src={AlvinImg}
           transition:name="photo-alvaro-pintos"
-          loading="lazy"
-          decoding="async"
-          src="miembros/alvin.webp"
           alt="Alvin"
           title="Álvaro pintos"
           class="h-50 lg:h-70 transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
         />
       </a>
       <a href="/integrante/gustavo-antuna" class="self-end">
-        <img
+        <Image
+          src={TopoImg}
           transition:name="photo-gustavo-antuna"
-          loading="lazy"
-          decoding="async"
-          src="miembros/topo.webp"
           alt="Gustavo Antuña"
           title="Gustavo Antuña"
           class="h-50 lg:h-70 transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
-        /></a
-      >
+        />
+      </a>
       <a href="/integrante/santiago-marrero" class="self-end">
-        <img
+        <Image
+          src={SantiagoImg}
           transition:name="photo-santiago-marrero"
-          loading="lazy"
-          decoding="async"
-          src="miembros/santiago.webp"
           alt="Santiago"
           title="Santiago Marrero"
           class="h-50 lg:h-70 object-left transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
         />
       </a>
       <a href="/integrantes" class="self-end">
-        <img
-          loading="lazy"
-          decoding="async"
-          src="miembros/otros.webp"
-          alt="Raro"
-          title="Antiguos mienbros"
+        <Image
+          src={OtroImg}
+          alt="Antiguos miembros"
+          title="Antiguos miembros"
           class="h-40 lg:h-50 object-left transform drop-shadow-xl hover:scale-105 hover:grayscale hover:contrast-125 hover:brightness-105 transition duration-300 ease-in-out"
         />
       </a>
@@ -118,14 +114,12 @@ const albumes = await getCollection("albumes");
                 class="group block transform transition duration-300 hover:scale-[1.02] hover:shadow-xl"
               >
                 <div class="rounded-xl bg-white p-4 shadow-md hover:bg-gray-50 relative">
-                  <img
+                  <Image
                     transition:name={`cover-${album.slug}`}
-                    src={`${cover_image}`}
+                    src={cover_image}
                     alt={title}
                     width="250"
                     height="250"
-                    loading="lazy"
-                    decoding="async"
                     class="rounded-lg w-full object-cover aspect-square group-hover:brightness-105 transition"
                   />
                   <p class="text-center mt-3 mb-0 text-lg font-semibold text-gray-800 group-hover:text-yellow-700">
@@ -136,11 +130,9 @@ const albumes = await getCollection("albumes");
             );
           })
       }
-      <img
-        src="enano.webp"
+      <Image
+        src={EnanoImg}
         alt=""
-        loading="lazy"
-        decoding="async"
         class="lg:col-span-3 self-end justify-self-end w-100"
       />
     </div>

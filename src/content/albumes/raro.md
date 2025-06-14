@@ -2,7 +2,7 @@
 title: "Raro"
 release_year: 2006
 description: "Undécimo álbum de estudio de El Cuarteto de Nos, lanzado el 20 de mayo de 2006. Producido por Juan Campodónico, marcó un punto de inflexión en la carrera de la banda, con letras más complejas y un sonido más roquero. Incluye éxitos como 'Yendo a la casa de Damián' y 'Ya no sé qué hacer conmigo'."
-cover_image: "albumes/raro.jpg"
+cover_image: "./portadas/raro.jpg"
 links:
   spotify_link: "https://open.spotify.com/intl-es/album/6ZLNLqqFwnoyqrzRxtHEzt"
   youtube_link: "https://www.youtube.com/watch?v=FTHnXLw6_Jk"

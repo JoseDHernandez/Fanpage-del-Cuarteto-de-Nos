@@ -2,7 +2,7 @@
 name: "Álvaro Pintos"
 role: "Batería, coros"
 time: "1985 - Actualidad"
-photo: "miembros/alvin.webp"
+photo: "./fotos/alvin.webp"
 priority: 2
 ---
 

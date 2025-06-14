@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
 export async function getStaticPaths() {
   const albumes = await getCollection("albumes");
   return albumes.map((album) => ({
@@ -15,15 +16,12 @@ const { title, release_year, description, cover_image, links, songs } =
 
 <Layout title={`${title}`}>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mt-6">
-    <img
+    <Image
+      src={cover_image}
       transition:name={`cover-${album.slug}`}
-      src={`../${cover_image}`}
       alt={title}
       class="w-[25rem] m-auto md:m-0 md:w-full rounded-xl shadow-lg"
-      loading="lazy"
-      decoding="async"
     />
-
     <div class="md:col-span-2 space-y-4">
       <h1 class="text-3xl font-bold my-6 text-gray-800">{title}</h1>
       <p class="text-sm italic text-gray-600">

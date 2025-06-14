@@ -2,7 +2,7 @@
 name: "Leonardo Baroncini"
 role: "Bateria"
 time: "1984 - 1985"
-photo: "miembros/leonardo.webp"
+photo: "./fotos/leonardo.webp"
 priority: 8
 ---
 

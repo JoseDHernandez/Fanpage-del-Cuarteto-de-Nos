@@ -2,7 +2,7 @@
 name: "Santiago Marrero"
 role: "Teclados, bajo, coros"
 time: "2009 - Actualidad"
-photo: "miembros/santiago.webp"
+photo: "./fotos/santiago.webp"
 priority: 4
 ---
 

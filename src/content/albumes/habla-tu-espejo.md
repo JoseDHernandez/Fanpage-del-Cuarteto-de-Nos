@@ -2,7 +2,7 @@
 title: "Habla tu espejo"
 release_year: 2014
 description: "Décimo cuarto álbum de estudio de El Cuarteto de Nos, lanzado el 6 de octubre de 2014 por Warner Music. Producido por Juan Campodónico, este disco marca un giro hacia un estilo más introspectivo y melódico, con letras profundas y una sonoridad más pop y electrónica. Incluye éxitos como 'No llora', '21 de septiembre' y 'Roberto'."
-cover_image: "albumes/habla-tu-espejo.jpg"
+cover_image: "./portadas/habla-tu-espejo.jpg"
 links:
   spotify_link: "https://open.spotify.com/intl-es/album/1ffZ5xExmmOr15QQzYrXyf"
   youtube_link: "https://www.youtube.com/watch?v=N2Uquz_ekXI"

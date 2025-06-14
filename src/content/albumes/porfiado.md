@@ -2,7 +2,7 @@
 title: "Porfiado"
 release_year: 2012
 description: "Décimotercer álbum de estudio de El Cuarteto de Nos, lanzado el 25 de abril de 2012 bajo el sello Warner Music Argentina. Producido por Juan Campodónico, este disco marcó un punto de inflexión en la carrera de la banda, con letras más introspectivas y un sonido más electrónico. Incluye éxitos como 'Cuando sea grande' y 'Buen día Benito'."
-cover_image: "albumes/porfiado.jpg"
+cover_image: "./portadas/porfiado.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/4X6PQwYWxtGGtKjAfX6wa6"
   youtube_link: "https://www.youtube.com/playlist?list=PLWVo2tank-zwGRibEJD8nyStR5_FeCR5U"

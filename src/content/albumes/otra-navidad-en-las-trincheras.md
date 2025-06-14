@@ -2,7 +2,7 @@
 title: "Otra Navidad en las Trincheras"
 release_year: 1994
 description: "Quinto álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1994 por el sello Ayuí / Tacuabé. Este disco marcó un punto de inflexión en la carrera del grupo, consolidando su popularidad en Uruguay y convirtiéndose en uno de los álbumes más vendidos del país. Con una mezcla de humor ácido, crítica social y experimentación musical, el álbum incluye clásicos como 'Bo cartero', 'El calzoncillo a rayas' y 'Sólo soy un polaco enamorado'."
-cover_image: "albumes/otra-navidad-en-las-trincheras.jpg"
+cover_image: "./portadas/otra-navidad-en-las-trincheras.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/4NcQWqkLL2P8cuKXNvMKga"
   youtube_link: "https://www.youtube.com/watch?v=i8k4ggaVq4w"

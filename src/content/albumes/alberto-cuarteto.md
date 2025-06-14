@@ -2,7 +2,7 @@
 title: "Alberto wolf y El Cuarteto de Nos"
 release_year: 1984
 description: "El primer álbum de estudio del Cuarteto de Nos, lanzado en 1984, es un hito en la historia del rock uruguayo. Con una mezcla de rock y humor, el álbum presenta letras ingeniosas y melodías pegajosas que capturan la esencia de la banda."
-cover_image: "albumes/alberto-cuarteto.jpg"
+cover_image: "./portadas/alberto-cuarteto.jpg"
 links:
   spotify_link: "https://open.spotify.com/intl-es/album/1yf1JecN6PiQqab6umYHPj"
   youtube_link: "https://music.youtube.com/playlist?list=OLAK5uy_k2FAaJFycIhNiUYzB-Z144RPNl6ZvIm8s&si=VwNSzGvYfkARQiVN"

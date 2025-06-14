@@ -2,7 +2,7 @@
 title: "Puertas"
 release_year: 2025
 description: "Vigésimo álbum de estudio de El Cuarteto de Nos, lanzado el 22 de mayo de 2025 bajo el sello Porfiado Records. Este disco conceptual presenta ocho canciones que se conectan a través de metáforas surrealistas, llevando al oyente por un viaje introspectivo y filosófico. El álbum destaca por su diversidad sonora, que abarca desde funk y rock garage hasta arreglos de cuerdas melancólicos."
-cover_image: "albumes/puertas.jpg"
+cover_image: "./portadas/puertas.jpg"
 links:
   spotify_link: "https://open.spotify.com/intl-es/album/0YyiLprwcLOytMKd4ES5tq"
   youtube_link: "https://www.youtube.com/watch?v=ovQTtQk0HJI"

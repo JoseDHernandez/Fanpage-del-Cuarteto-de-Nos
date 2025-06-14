@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import Logo from "../../public/logo.webp";
 ---
 
 <header>
@@ -7,14 +8,12 @@
     class="flex items-center justify-between bg-gray-900 text-white px-6 py-4 shadow-md"
   >
     <div class="flex items-center space-x-2">
-      <img
-        src="../logo.webp"
+      <Image
+        src={Logo}
         alt="El Cuarteto de Nos logo"
         width="40"
         height="40"
         class="rounded-full invert"
-        loading="lazy"
-        decoding="async"
       />
       <span class="text-lg font-bold hidden sm:inline-block"
         >El Cuarteto de Nos</span

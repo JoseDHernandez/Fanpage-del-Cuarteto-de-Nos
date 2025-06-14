@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 export async function getStaticPaths() {
   const integrantes = await getCollection("integrantes");
@@ -19,10 +20,10 @@ const { Content } = await render(integrante);
       <div
         class="grid md:grid-cols-2 gap-10 items-center mb-6 min-h-screen pt-6"
       >
-        <img
-          transition:name={`photo-${integrante.slug}`}
-          src={`../${photo}`}
+        <Image
+          src={photo}
           alt={name}
+          transition:name={`photo-${integrante.slug}`}
           class="self-start rounded-xl shadow-xl object-cover w-[25rem] m-auto md:m-0 md:w-[30em] h-auto aspect-square object-top drop-shadow-xl bg-white"
         />
         <div class="self-start">

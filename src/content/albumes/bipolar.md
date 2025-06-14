@@ -2,7 +2,7 @@
 title: "Bipolar"
 release_year: 2009
 description: "Decimotercer álbum de estudio de El Cuarteto de Nos, lanzado el 17 de noviembre de 2009 bajo el sello Warner Music. Producido por Juan Campodónico, este disco marcó un punto de inflexión en la banda, con letras más introspectivas y un sonido más electrónico. Incluye éxitos como 'El hijo de Hernández' y 'Miguel Gritar'."
-cover_image: "albumes/bipolar.jpg"
+cover_image: "./portadas/bipolar.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/4Ay02WMMtEKaySj1mtPTga"
   youtube_link: "https://www.youtube.com/watch?v=YFRhjlpSnlA"

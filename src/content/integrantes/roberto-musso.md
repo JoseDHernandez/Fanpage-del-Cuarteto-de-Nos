@@ -2,7 +2,7 @@
 name: "Roberto Musso"
 role: "Voz, guitarra rítmica"
 time: "1984 - Actualidad"
-photo: "miembros/roberto.webp"
+photo: "./fotos/roberto.webp"
 priority: 1
 ---
 

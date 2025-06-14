@@ -2,7 +2,7 @@
 title: "El Tren Bala"
 release_year: 1996
 description: "Octavo álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1996 por el sello Manzana Verde. Este disco es conocido por su estilo irreverente y provocador, y generó controversia en Uruguay debido a la canción 'El día que Artigas se emborrachó', que fue objeto de una denuncia penal por presunta difamación al prócer nacional José Gervasio Artigas. A pesar de la polémica, el álbum consolidó la popularidad de la banda y es considerado un hito en su carrera."
-cover_image: "albumes/el-tren-bala.jpg"
+cover_image: "./portadas/el-tren-bala.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/3xbz47G6HXJnh7xB1tzekc"
   youtube_link: "https://www.youtube.com/playlist?list=PLWVo2tank-zwDwKwu7Tv6GyoQ0Yoop7Je"

@@ -2,7 +2,7 @@
 name: "Santiago tavella"
 role: "Bajo, voz"
 time: "1984 - 2024"
-photo: "miembros/tavella.webp"
+photo: "./fotos/tavella.webp"
 priority: 5
 ---
 

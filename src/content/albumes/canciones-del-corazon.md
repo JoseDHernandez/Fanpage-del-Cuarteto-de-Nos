@@ -2,7 +2,7 @@
 title: "Canciones del Corazón"
 release_year: 1991
 description: "Cuarto álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1991 por el sello Orfeo. Este disco marcó un punto de inflexión en la carrera del grupo, incorporando una mayor diversidad musical y letras más experimentales. Incluye clásicos como 'Canción de Amor', 'Corazón Maricón' y 'Al Cielo No'."
-cover_image: "albumes/canciones-del-corazon.jpg"
+cover_image: "./portadas/canciones-del-corazon.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/2nYkOzI6plzhX7StDOlMOA"
   youtube_link: "https://www.youtube.com/watch?v=i8k4ggaVq4w"

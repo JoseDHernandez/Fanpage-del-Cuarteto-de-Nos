@@ -2,7 +2,7 @@
 title: "Revista ¡¡Ésta!!"
 release_year: 1998
 description: "Noveno álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1998 por el sello BMG. Este disco presenta un concepto único donde cada canción representa una noticia ficticia, y el folleto que acompaña al álbum simula una revista sensacionalista. Musicalmente, es considerado el disco más roquero de la banda hasta esa fecha, con solos de guitarra prominentes y una energía renovada. Incluye temas destacados como 'Ya te vas a mejorar', 'Maté a la maestra' y 'Yo soy Alvin, el batero'."
-cover_image: "albumes/revista-esta.jpg"
+cover_image: "./portadas/revista-esta.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/6DvYfvfz8VSJ8mJoH6O4at"
   youtube_link: "https://www.youtube.com/watch?v=WjBtBuu0s4g"

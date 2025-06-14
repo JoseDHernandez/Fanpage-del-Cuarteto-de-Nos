@@ -2,7 +2,7 @@
 title: "Barranca Abajo"
 release_year: 1995
 description: "Séptimo álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1995 por el sello Ayuí / Tacuabé. Este disco presenta un enfoque más oscuro y experimental, incorporando elementos de punk y rock alternativo. El álbum narra la vida de José Barrancas, un personaje ficticio que es el protagonista del disco. Incluye canciones destacadas como 'Vino en mi jeringa', 'No me puedo mover' y 'El diablo en mi corazón'."
-cover_image: "albumes/barranca-abajo.jpg"
+cover_image: "./portadas/barranca-abajo.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/1ax0ifSKKlzHDdo8MBR5T7"
   youtube_link: "https://www.youtube.com/playlist?list=PLWVo2tank-zwgM-qFiCc2cJW_UOMGGozb"

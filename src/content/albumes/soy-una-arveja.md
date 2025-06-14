@@ -2,7 +2,7 @@
 title: "Soy una Arveja"
 release_year: 1987
 description: "Segundo álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1987. Este disco marcó un cambio hacia un sonido más eléctrico y experimental, incorporando guitarras eléctricas y un enfoque lírico más surrealista. También fue el primero en contar con la participación del baterista Álvaro Pintos."
-cover_image: "albumes/soy-una-arveja.jpg"
+cover_image: "./portadas/soy-una-arveja.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/30k1g1RNzspPOJ7gSnQawf"
   youtube_link: "https://music.youtube.com/playlist?list=OLAK5uy_k2FAaJFycIhNiUYzB-Z144RPNl6ZvIm8s"

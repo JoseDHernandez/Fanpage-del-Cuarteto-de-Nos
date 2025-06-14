@@ -2,7 +2,7 @@
 title: "Cortamambo"
 release_year: 2000
 description: "Décimo álbum de estudio de El Cuarteto de Nos, lanzado en 2000 por Koala Records. Este disco se caracteriza por su humor ácido y letras provocadoras, abordando temas controvertidos como 'Maten las ballenas (arresten a Willy)', 'La pequeña Leti' y 'Cristo te odia'. Incluye éxitos como 'Me amo' y 'Necesito una mujer'."
-cover_image: "albumes/cortamambo.jpg"
+cover_image: "./portadas/cortamambo.jpg"
 links:
   spotify_link: "https://open.spotify.com/intl-es/album/4fNaCXMkt7UWlUf7W8ncFz"
   youtube_link: "https://www.youtube.com/playlist?list=PLWVo2tank-zzGNbMuTNTea-wF-Vbjmb3d"

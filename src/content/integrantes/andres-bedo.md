@@ -2,7 +2,7 @@
 name: "Andrés Bedó"
 role: "Teclado"
 time: "1984 - 1988"
-photo: "miembros/andres.webp"
+photo: "./fotos/andres.webp"
 priority: 7
 ---
 

@@ -2,7 +2,7 @@
 name: "Gustavo Antuña"
 role: "Guitarra, coros"
 time: "2009 - Actualidad"
-photo: "miembros/topo.webp"
+photo: "./fotos/topo.webp"
 priority: 3
 ---
 

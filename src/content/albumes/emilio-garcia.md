@@ -2,7 +2,7 @@
 title: "Emilio García"
 release_year: 1988
 description: "Tercer álbum de estudio de la banda uruguaya El Cuarteto de Nos, lanzado en 1988 por la discográfica Orfeo. Este disco continúa con el estilo irreverente y experimental de la banda, incorporando elementos de rock alternativo y new wave. El título hace referencia a un mánager ficticio creado por el grupo, y la portada presenta una imagen de su oficina imaginaria."
-cover_image: "albumes/emilio-garcia.jpg"
+cover_image: "./portadas/emilio-garcia.jpg"
 links:
   spotify_link: "https://open.spotify.com/album/2nYkOzI6plzhX7StDOlMOA"
   youtube_link: "https://www.youtube.com/watch?v=i8k4ggaVq4w"

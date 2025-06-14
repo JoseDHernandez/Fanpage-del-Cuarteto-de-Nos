@@ -2,7 +2,7 @@
 name: "Ricardo 'Riki' Musso"
 role: "Guitarra, voz"
 time: "1984 - 2009"
-photo: "miembros/riki.webp"
+photo: "./fotos/riki.webp"
 priority: 6
 ---
 
