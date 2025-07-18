@@ -29,26 +29,30 @@ const { title, release_year, description, cover_image, links, songs } =
       </p>
       <p class="text-gray-700 text-justify">{description}</p>
 
-      <div class="flex flex-wrap gap-4 justify-around sm:justify-start">
-        <a
-          class="bg-green-800 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold transition duration-200"
-          href={links.spotify_link}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={`Escucha ${title} en Spotify`}
-        >
-          Spotify
-        </a>
-        <a
-          class="bg-red-800 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-semibold transition duration-200"
-          href={links.youtube_link}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={`Escucha ${title} en YouTube Music`}
-        >
-          YouTube Music
-        </a>
-      </div>
+      {
+        links && (
+          <div class="flex flex-wrap gap-4 justify-around sm:justify-start">
+            <a
+              class="bg-green-800 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold transition duration-200"
+              href={links?.spotify_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Escucha ${title} en Spotify`}
+            >
+              Spotify
+            </a>
+            <a
+              class="bg-red-800 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-semibold transition duration-200"
+              href={links?.youtube_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Escucha ${title} en YouTube Music`}
+            >
+              YouTube Music
+            </a>
+          </div>
+        )
+      }
     </div>
   </div>
 

@@ -13,10 +13,12 @@ const albumesCollection = defineCollection({
       release_year: z.number(),
       description: z.string(),
       cover_image: image(),
-      links: z.object({
-        spotify_link: z.string().url(),
-        youtube_link: z.string().url(),
-      }),
+      links: z
+        .object({
+          spotify_link: z.string().url().optional(),
+          youtube_link: z.string().url().optional(),
+        })
+        .optional(),
       songs: z.array(
         z.object({
           title: z.string().transform((s) => {
