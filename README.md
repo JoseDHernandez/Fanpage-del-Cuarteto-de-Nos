@@ -17,7 +17,7 @@ Live demo: https://fanpage-cuarteto-de-nos.netlify.app/
 ## Screenshots
 
 **Home page**
-![Home page]("https://github.com/user-attachments/assets/45eb3090-7d9b-4027-89fe-3719b04eb0cc)
+![Home page](https://github.com/user-attachments/assets/45eb3090-7d9b-4027-89fe-3719b04eb0cc)
 
 **Discography**
 ![Discography](https://github.com/user-attachments/assets/92a40a0f-eb04-4990-95c3-34c940063143)
